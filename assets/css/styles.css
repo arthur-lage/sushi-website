@@ -337,10 +337,47 @@ img {
 }
 
 .button:hover i {
-  transform: translateX(.25rem);
+  transform: translateX(0.25rem);
 }
 
 /*=============== ABOUT ===============*/
+
+.about {
+  position: relative;
+}
+
+.about__container {
+  row-gap: 3rem;
+}
+
+.about__info {
+  text-align: center;
+}
+
+.about__title img {
+  width: 30px;
+}
+
+.about__title div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+}
+
+.about__img {
+  width: 300px;
+  justify-self: center;
+}
+
+.about__leaf {
+  width: 100px;
+  opacity: .2;
+  position: absolute;
+  bottom: 11rem;
+  right: -1.5rem;
+  transform: rotate(-15deg);
+}
 
 /*=============== POPULAR ===============*/
 
