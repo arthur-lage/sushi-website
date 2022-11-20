@@ -1,4 +1,5 @@
 /*=============== SHOW MENU ===============*/
+
 const navMenu = document.querySelector("#nav-menu");
 const navToggle = document.querySelector("#nav-toggle");
 const navClose = document.querySelector("#nav-close");
@@ -25,6 +26,7 @@ const linkAction = () => {
 navLinks.forEach((link) => link.addEventListener("click", linkAction));
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
+
 const scrollHeader = () => {
   const header = document.querySelector("#header")
 
@@ -32,7 +34,16 @@ const scrollHeader = () => {
 }
 
 window.addEventListener("scroll", scrollHeader)
+
 /*=============== SHOW SCROLL UP ===============*/
+
+const scrollUp = () => {
+  const scrollUpButton = document.querySelector("#scrollup")
+
+  window.scrollY > 350 ?  scrollUpButton.classList.add("show-scroll") : scrollUpButton.classList.remove("show-scroll")
+}
+
+window.addEventListener("scroll", scrollUp)
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
