@@ -83,3 +83,16 @@ themeButton.addEventListener("click", () => {
 });
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
+const scrollReveal = new ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
+});
+
+scrollReveal.reveal(".home__img, .newsletter__container, .footer__logo, .footer__description, .footer__content, .footer__info");
+scrollReveal.reveal(".home__info", { origin: "bottom" });
+scrollReveal.reveal(".about__info, .recently__info", { origin: "left" });
+scrollReveal.reveal(".about__img, .recently__img", { origin: "right" });
+scrollReveal.reveal(".popular__card", { interval: 100 });
